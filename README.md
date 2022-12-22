@@ -10,7 +10,7 @@ installed locally on the host. This happens because it depends on the module
 
 ## The Solution
 
-Putting the file `rados.py` into the same directory `/usr/lib/check_mk_agent/plugins/58` as the ceph plugin on the host
+Putting the file [rados.py](https://github.com/HenriWahl/checkmk-ceph-rook-rados/blob/main/rados.py) into the same directory `/usr/lib/check_mk_agent/plugins/58` as the ceph plugin on the host
 allows the plugin to [import](https://github.com/HeinleinSupport/check_mk_extensions/blob/cmk2.1/ceph/agents/plugins/ceph#L19)
 the module `rados` as before:
 
